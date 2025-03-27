@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Dr. João</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Customização de cores e fundo */
+        header {
+            background: url('img/cab.jpg') no-repeat center center;
+            background-size: cover;
+            height: 350px;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+        }
+
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: #333 !important;
+        }
+
+        .card {
+            border: 1px solid #4CAF50;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .testimonial-item {
+            text-align: center;
+            font-style: italic;
+        }
+
+        .testimonial-item img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+
+	
+	 .imgserv-item img {
+            border-radius: 50%;
+            width: 60%;
+            height: 60%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Clínica Dr. João</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Cabeçalho -->
+<header>
+    <h1>Bem-vindo à Clínica Dr. João</h1>
+    <p>Cuide da sua visão com quem entende do assunto</p>
+</header>
+
+<!-- Sobre -->
+<section id="sobre" class="container text-center">
+    <h2 class="section-title">Sobre a Clínica</h2>
+    <p>O Dr. João Garcia é um especialista em oftalmologia com vasta experiência no tratamento de doenças oculares. A Clínica Dr. João oferece atendimento personalizado, com foco em soluções inovadoras para a saúde dos seus olhos.</p>
+</section>
+
+<!-- Serviços -->
+<section id="servicos" class="container text-center">
+    <h2 class="section-title">Serviços</h2>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-4">
+		<div class="imgserv-item">
+                <img src="img/exame.jpg" class="card-img-top" alt="Serviço 1">
+		</div>
+                <div class="card-body">
+                    <h5 class="card-title">Consultas Oftalmológicas</h5>
+                    <p class="card-text">Consultas para diagnóstico e tratamento de problemas de visão.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-4">
+		 <div class="imgserv-item">
+                <img src="img/cirur.jpg" class="card-img-top" alt="Serviço 2">
+			</div>
+                <div class="card-body">
+                    <h5 class="card-title">Cirurgia Refrativa</h5>
+                    <p class="card-text">Tratamentos cirúrgicos para correção de miopia, astigmatismo e hipermetropia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="card mb-4">
+		<div class="imgserv-item">
+                <img src="img/exame2.jpg" class="card-img-top" alt="Serviço 3">
+		</div>
+                <div class="card-body">
+                    <h5 class="card-title">Exames de Diagnóstico</h5>
+                    <p class="card-text">Realizamos exames completos para diagnóstico ocular preciso.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Depoimentos -->
+<section id="depoimentos" class="container text-center">
+    <h2 class="section-title">Depoimentos</h2>
+    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="testimonial-item">
+                    <img src="img/pessoa1.png" alt="Cliente 1">
+                    <p>"O Dr. João é incrível! Minha visão melhorou muito após o tratamento."</p>
+                    <p><strong>Maria Oliveira</strong></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="testimonial-item">
+                    <img src="img/pessoa2.png" alt="Cliente 2">
+                    <p>"Excelente atendimento! A clínica oferece toda a assistência que você precisa."</p>
+                    <p><strong>João Silva</strong></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section id="localizacao" class="container text-center my-5">
+    <h2 class="section-title">Nossa Localização</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.9305767652036!2d-56.099170124084225!3d-15.595357618087137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db196a6814009%3A0xd5aca980132bbe6c!2sR.%20C%C3%A2ndido%20Mariano%2C%20400%20-%20Centro%20Norte%2C%20Cuiab%C3%A1%20-%20MT%2C%2078005-150!5e0!3m2!1spt-BR!2sbr!4v1742996166050!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+
+</section>
+
+<!-- Contato -->
+<section id="contato" class="container text-center">
+    <h2 class="section-title">Contato</h2>
+    <form>
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Seu email">
+        </div>
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+<br>
+</section>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2025 Clínica Dr. João - Todos os direitos reservados</p>
+</footer>
+
+<!-- Bootstrap JS e dependências -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+<!-- Ícone flutuante do WhatsApp -->
+<a href="https://wa.me/55NUMERODETELEFONE" target="_blank" class="whatsapp-float" id="whatsapp-float">
+    <img src="img/whatsapp.png" alt="WhatsApp" />
+</a>
+
+<!-- Estilos CSS para o ícone flutuante -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25D366;
+        border-radius: 50%;
+        padding: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+</html>
