@@ -66,6 +66,32 @@
             height: 250px;
             object-fit: cover;
         }
+
+        /* Responsividade */
+        @media (max-width: 767px) {
+            header {
+                height: 250px;
+                padding: 50px 0;
+            }
+        }
+
+        /* Botão do WhatsApp */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            z-index: 9999;
+        }
+
+        .whatsapp-btn i {
+            margin-right: 10px;
+        }
     </style>
 </head>
 
@@ -113,10 +139,10 @@
     <section id="servicos" class="container text-center">
         <h2 class="section-title">Serviços</h2>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card mb-4">
                     <div class="imgserv-item">
-                        <img src="img/exame.jpg" class="card-img-top" alt="Serviço 1">
+                        <img src="img/exame.jpg" class="card-img-top img-fluid" alt="Serviço 1">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Consultas Oftalmológicas</h5>
@@ -124,10 +150,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card mb-4">
                     <div class="imgserv-item">
-                        <img src="img/cirur.jpg" class="card-img-top" alt="Serviço 2">
+                        <img src="img/cirur.jpg" class="card-img-top img-fluid" alt="Serviço 2">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Cirurgia Refrativa</h5>
@@ -135,10 +161,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-sm-12 col-md-4 col-lg-4">
                 <div class="card mb-4">
                     <div class="imgserv-item">
-                        <img src="img/exame2.jpg" class="card-img-top" alt="Serviço 3">
+                        <img src="img/exame2.jpg" class="card-img-top img-fluid" alt="Serviço 3">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Exames de Diagnóstico</h5>
@@ -156,14 +182,14 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="testimonial-item">
-                        <img src="img/pessoa1.png" alt="Cliente 1">
+                        <img src="img/pessoa1.png" alt="Cliente 1" class="img-fluid">
                         <p>"O Dr. João é incrível! Minha visão melhorou muito após o tratamento."</p>
                         <p><strong>Maria Oliveira</strong></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="testimonial-item">
-                        <img src="img/pessoa2.png" alt="Cliente 2">
+                        <img src="img/pessoa2.png" alt="Cliente 2" class="img-fluid">
                         <p>"Excelente atendimento! A clínica oferece toda a assistência que você precisa."</p>
                         <p><strong>João Silva</strong></p>
                     </div>
@@ -213,10 +239,16 @@
         <p>&copy; 2025 Clínica Dr. João - Todos os direitos reservados</p>
     </footer>
 
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/55NUMERODEWHATSAPP" class="whatsapp-btn" target="_blank">
+        <i class="bi bi-whatsapp"></i> WhatsApp
+    </a>
+
     <!-- Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
 
