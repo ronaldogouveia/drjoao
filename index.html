@@ -6,68 +6,31 @@
     <title>Clínica Dr. João</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <style>
-        /* Customização de cores e fundo */
         header {
             background: url('img/cab.jpg') no-repeat center center;
             background-size: cover;
             height: 350px;
             color: white;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 20px;
+            padding: 80px 0;
         }
-
         .navbar {
             background-color: #4CAF50;
         }
-
         .navbar-brand, .nav-link {
             color: white !important;
         }
-
-        .navbar .nav-link:hover {
-            color: #333 !important;
-        }
-
-        .card {
-            border: 1px solid #4CAF50;
-        }
-
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
         .section-title {
             margin-top: 30px;
             font-weight: bold;
             color: #4CAF50;
         }
-
-        .testimonial-item {
-            text-align: center;
-            font-style: italic;
-        }
-
         .testimonial-item img {
             border-radius: 50%;
             width: 80px;
             height: 80px;
         }
-
-        .imgserv-item img {
-            border-radius: 10px;
-            width: 100%;
-            height: auto;
-        }
-
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -78,14 +41,9 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
         .whatsapp-float img {
             width: 40px;
             height: 40px;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
         }
     </style>
 </head>
@@ -95,98 +53,72 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <a class="navbar-brand" href="#">Clínica Dr. João</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#servicos">Serviços</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#depoimentos">Depoimentos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contato">Contato</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#localizacao">Localização</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
             </ul>
         </div>
     </div>
 </nav>
 
-<!-- Cabeçalho -->
 <header>
     <h1>Bem-vindo à Clínica Dr. João</h1>
     <p>Cuide da sua visão com quem entende do assunto</p>
 </header>
 
-<!-- Seções responsivas -->
-<section id="sobre" class="container text-center py-4">
+<!-- Seções Restauradas -->
+<section id="sobre" class="container text-center">
     <h2 class="section-title">Sobre a Clínica</h2>
-    <p>O Dr. João Garcia é um especialista em oftalmologia com vasta experiência no tratamento de doenças oculares...</p>
+    <p>O Dr. João Garcia é um especialista em oftalmologia com vasta experiência.</p>
 </section>
 
-<section id="servicos" class="container text-center py-4">
+<section id="servicos" class="container text-center">
     <h2 class="section-title">Serviços</h2>
     <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="img/exame.jpg" class="card-img-top img-fluid" alt="Serviço 1">
-                <div class="card-body">
-                    <h5 class="card-title">Consultas Oftalmológicas</h5>
-                    <p class="card-text">Consultas para diagnóstico e tratamento de problemas de visão.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="img/cirur.jpg" class="card-img-top img-fluid" alt="Serviço 2">
-                <div class="card-body">
-                    <h5 class="card-title">Cirurgia Refrativa</h5>
-                    <p class="card-text">Tratamentos cirúrgicos para correção de miopia, astigmatismo e hipermetropia.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-4">
-                <img src="img/exame2.jpg" class="card-img-top img-fluid" alt="Serviço 3">
-                <div class="card-body">
-                    <h5 class="card-title">Exames de Diagnóstico</h5>
-                    <p class="card-text">Realizamos exames completos para diagnóstico ocular preciso.</p>
-                </div>
-            </div>
-        </div>
+        <div class="col-md-4"><p>Consultas Oftalmológicas</p></div>
+        <div class="col-md-4"><p>Cirurgia Refrativa</p></div>
+        <div class="col-md-4"><p>Exames de Diagnóstico</p></div>
     </div>
 </section>
 
-<!-- Depoimentos -->
-<section id="depoimentos" class="container text-center py-4">
+<section id="depoimentos" class="container text-center">
     <h2 class="section-title">Depoimentos</h2>
-    <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="testimonial-item">
-                    <img src="img/pessoa1.png" alt="Cliente 1">
-                    <p>"O Dr. João é incrível! Minha visão melhorou muito após o tratamento."</p>
-                    <p><strong>Maria Oliveira</strong></p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="testimonial-item">
-                    <img src="img/pessoa2.png" alt="Cliente 2">
-                    <p>"Excelente atendimento! A clínica oferece toda a assistência que você precisa."</p>
-                    <p><strong>João Silva</strong></p>
-                </div>
-            </div>
-        </div>
+    <div class="testimonial-item">
+        <img src="img/pessoa1.png" alt="Cliente 1">
+        <p>"Ótimo atendimento!"</p>
     </div>
+</section>
+
+<section id="localizacao" class="container text-center">
+    <h2 class="section-title">Nossa Localização</h2>
+    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450"></iframe>
+</section>
+
+<section id="contato" class="container text-center">
+    <h2 class="section-title">Contato</h2>
+    <form>
+        <input type="text" class="form-control" placeholder="Seu nome">
+        <input type="email" class="form-control" placeholder="Seu email">
+        <textarea class="form-control" placeholder="Sua mensagem"></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
 </section>
 
 <footer>
     <p>&copy; 2025 Clínica Dr. João - Todos os direitos reservados</p>
 </footer>
+
+<a href="https://wa.me/55NUMERODETELEFONE" target="_blank" class="whatsapp-float">
+    <img src="img/whatsapp.png" alt="WhatsApp" />
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
